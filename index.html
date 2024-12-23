@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Shop</title>
+  <!-- Bootstrap CSS -->
+  <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="../images/pharmacy-shopping-cart.png" type="image/png">
+    <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="fas fa-notes-medical"></i> Medical Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products"><i class="fas fa-box"></i> Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#most-sales"><i class="fas fa-chart-line"></i> Most Sales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i> Account
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+              <li><a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
+              <li><a class="dropdown-item" href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button id="dark-mode-toggle" class="btn light ms-2 fs-5">
+              <i class="fas fa-moon"></i> Dark Mode
+            </button>
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+
+  <header class="text-center py-5 justify-content-center d-flex align-items-center" style="margin-top: 70px;">  
+    <a href="#products" class="btn btn-primary btn-lg shop-btn animated mt-5">  
+      <i class="fas fa-shopping-cart"></i> Shop Now  
+    </a>  
+  </header>  
+  
+  <!-- About Us Section -->
+  <section id="about" class="py-5 ">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4"><i class="fas fa-info-circle"></i> About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="../images/who-we-are.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+        </div>
+        <div class="col-md-6">
+          <h3>Our Mission</h3>
+          <p class="">
+            At Medical Shop, we are dedicated to delivering top-notch medical supplies to ensure your health and well-being. 
+            From protective gear to first aid essentials, we aim to provide everything you need with convenience and quality.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success"></i> High-Quality Products</li>
+            <li><i class="fas fa-check-circle text-success"></i> Affordable Pricing</li>
+            <li><i class="fas fa-check-circle text-success"></i> Reliable Customer Support</li>
+            <li><i class="fas fa-check-circle text-success"></i> Fast Delivery</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary mt-3"><i class="fas fa-envelope"></i> Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <main id="products" class="container my-5">
+    <h2 class="text-center mb-4 text-primary"><i class="fas fa-boxes"></i> Our Products</h2>
+    <div class="row g-4"></div>
+  </main>
+
+  <!-- Most Sales Section -->
+  <section id="most-sales" class="py-5 bg-primary text-white">
+    <div class="container">
+      <h2 class="text-center mb-4"><i class="fas fa-chart-line"></i> Most Sales</h2>
+      <div id="sales-products" class="row g-4"></div>
+    </div>
+    <br>
+    <div class="text-center">
+      <img src="../images/logo.gif" width="1500" height="300" alt="">
+    </div>
+  </section>
+  
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5 ">
+    <div class="container">
+      <h2 class="text-center text-primary mb-4"><i class="fas fa-envelope"></i> Contact Us</h2>
+      <form class="w-75 mx-auto shadow-lg p-4 rounded">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white pt-5" style="background-color: #212529;">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <!-- Contact Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary"><i class="fas fa-medkit"></i> Medical Shop</h5>
+          <p class="text-light">
+            Your trusted provider of medical essentials and supplies. We care about your health and convenience.
+          </p>
+          <p><i class="fas fa-phone-alt me-2"></i> +1 234 567 890</p>
+          <p><i class="fas fa-envelope me-2"></i> support@medicalshop.com</p>
+          <p><i class="fas fa-map-marker-alt me-2"></i> 5 geza St, cairo, egypt</p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary"><i class="fas fa-link"></i> Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2"></i> Home</a></li>
+            <li><a href="#about" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2"></i> About Us</a></li>
+            <li><a href="#products" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2"></i> Products</a></li>
+            <li><a href="#most-sales" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2"></i> Most Sales</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none"><i class="fas fa-chevron-right me-2"></i> Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-primary"><i class="fas fa-share-alt"></i> Connect With Us</h5>
+          <p class="text-light">Follow us on social media for the latest updates and offers!</p>
+          <div>
+            <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="#" class="text-light"><i class="fab fa-youtube fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="text-white">
+  
+      <!-- Copyright -->
+      <div class="row text-center">
+        <div class="col-12">
+          <p class="mb-0">&copy; 2024 <span class="text-primary">Medical Shop</span>. All Rights Reserved.</p>
+          <p class="small">Designed with <i class="fas fa-heart text-danger"></i> by Medical Shop Team</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap JS -->
+  <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="../JS/index.js"></script>
+</body>
+</html>

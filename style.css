@@ -1,0 +1,413 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    
+  }
+
+  ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f4f4f4; /* Background color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #007bff; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Round edges of the scrollbar thumb */
+    border: 3px solid #f4f4f4; /* Adds a border to match track color */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Darker shade on hover */
+  }
+  
+  /* For Firefox */
+  html {
+    scrollbar-color: #007bff #f4f4f4; /* Thumb color and track color */
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+  }
+  /* Light mode (default) */
+/* Dark mode background and text colors */
+body.dark-mode {
+    background-color: #121212; /* Dark background for the entire page */
+    color: white !important;
+  }
+  
+  /* Navbar dark mode styling */
+  .navbar.dark-mode {
+    background-color: #1f1f1f; /* Deep gray for the navbar */
+    border-bottom: 2px solid #007bff; /* Blue border for contrast */
+  }
+  
+  .navbar-dark .navbar-nav .nav-link.dark-mode {
+    color: #e0e0e0;
+  }
+  .navbar-dark .navbar-nav .nav-link.dark-mode:hover {
+    color: #007bff; /* Blue hover effect */
+  }
+  
+  /* Footer dark mode styling */
+  footer.dark-mode {
+    background-color: #1f1f1f; /* Match navbar color */
+    color: #e0e0e0; /* Consistent light text */
+  }
+  footer.dark-mode a {
+    color: #007bff; /* Highlight social links in blue */
+  }
+  footer.dark-mode a:hover {
+    color: #ff6f61; /* Soft red hover effect for variety */
+  }
+  
+  /* Cards in dark mode */
+  .card.dark-mode {
+    background-color: #1e1e2e; /* Slightly lighter dark gray for contrast */
+    color: #e0e0e0; /* Light text */
+    border: 1px solid #343a40; /* Subtle border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  }
+  .card.dark-mode .btn {
+    background-color: #007bff; /* Blue buttons */
+    color: #ffffff;
+    border: none;
+  }
+  .card.dark-mode .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Forms in dark mode */
+  form.dark-mode {
+    background-color: #1e1e2e;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  form.dark-mode input,
+  form.dark-mode textarea {
+    background-color: #2c2c3c; /* Darker input fields */
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  form.dark-mode input:focus,
+  form.dark-mode textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Buttons in dark mode */
+  .btn-dark-mode {
+    background-color: #007bff; /* Vibrant blue button */
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .btn-dark-mode:hover {
+    background-color: #0056b3; /* Slightly darker blue on hover */
+  }
+  
+  /* Scrollbar for dark mode */
+  body.dark-mode ::-webkit-scrollbar {
+    width: 12px;
+  }
+  body.dark-mode ::-webkit-scrollbar-track {
+    background: #1e1e2e; /* Dark track */
+  }
+  body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #007bff; /* Blue thumb */
+    border-radius: 6px;
+  }
+  body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Section headings in dark mode */
+  h2.dark-mode {
+    color: #007bff; /* Vibrant blue for section headings */
+  }
+  
+  /* Links in dark mode */
+  a.dark-mode {
+    color: #007bff;
+    text-decoration: none;
+  }
+  a.dark-mode:hover {
+    color: #ff6f61; /* Soft red hover effect */
+  }
+  
+  /* Hero section in dark mode */
+  header.dark-mode {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+  }
+  header.dark-mode .btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+  }
+  header.dark-mode .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Dark Mode Background for About and Contact Sections */
+#about.dark-mode,
+#contact.dark-mode {
+  background-color: #2c2c3c; /* Dark gray background for these sections */
+  color: #e0e0e0; /* Light text color for readability */
+}
+
+/* Heading Color for About and Contact Sections in Dark Mode */
+#about.dark-mode h2,
+#contact.dark-mode h2 {
+  color: #007bff; /* Vibrant blue for headings */
+}
+
+/* Text Color and Button Style for About and Contact Sections */
+#about.dark-mode p,
+#contact.dark-mode p {
+  color: #dcdcdc; /* Lighter gray text */
+}
+
+#about.dark-mode .btn,
+#contact.dark-mode .btn {
+  background-color: #007bff; /* Blue button */
+  color: #ffffff;
+  border: none;
+}
+#about.dark-mode .btn:hover,
+#contact.dark-mode .btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Forms in the Contact Section (Dark Mode) */
+#contact.dark-mode form {
+  background-color: #1e1e2e; /* Dark background for form */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#contact.dark-mode input,
+#contact.dark-mode textarea {
+  background-color: #2c2c3c; /* Darker input fields */
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+#contact.dark-mode input:focus,
+#contact.dark-mode textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
+
+
+/* Smooth Page Transitions */
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #007bff;
+  border-radius: 6px;
+  border: 3px solid #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+html {
+  scrollbar-color: #007bff #f4f4f4;
+  scrollbar-width: thin;
+}
+
+/* Smooth Navbar Transition on Scroll */
+.navbar {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 123, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons with Animated Effects */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Card Hover Animation */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button Styling */  
+.shop-btn {  
+  border-radius: 50px; /* Makes the button rounded */  
+  padding: 15px 40px; /* Increases padding for a bigger button */  
+  font-size: 1.5rem; /* Increases the font size */  
+  transition: all 0.3s ease; /* Smooth transition for hover effects */  
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow */  
+}  
+
+/* Hover Effect */  
+.shop-btn:hover {  
+  background-color: #0056b3; /* Slightly darker shade on hover */  
+  transform: scale(1.1); /* Enlarges the button on hover */  
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);  
+}  
+
+/* Animation */  
+@keyframes fadeInUp {  
+  0% {  
+    opacity: 0;  
+    transform: translateY(20px);  
+  }  
+  100% {  
+    opacity: 1;  
+    transform: translateY(0);  
+  }  
+}  
+
+/* Apply Animation to Button */  
+.animated {  
+  animation: fadeInUp 1s ease-out;  
+}  
+
+
+
+/* Section Fade-In Animation */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero Section Animation */
+header {
+  background: url('../images/heroimg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 850px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 768px) {
+  header {
+    background-position: center top;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    background-position: center top;
+    height: 250px;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer Icon Animation */
+footer .fas,
+footer .fab {
+  transition: transform 0.3s, color 0.3s;
+}
+
+footer .fas:hover,
+footer .fab:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+/* Input Field Focus Animation */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Dark Mode Button Animation */
+#dark-mode-toggle {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+  transform: rotate(20deg);
+  background-color: #0056b3;
+}
+
+/* Product Card Hover Animation */
+.card .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Navbar Dropdown Animation */
+.navbar .dropdown-menu {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .dropdown-menu.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+  /* Scrollbar for WebKit browsers (Chrome, Safari, Edge) */
