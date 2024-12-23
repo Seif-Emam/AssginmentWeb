@@ -319,7 +319,7 @@ section {
 
 /* Hero Section Animation */
 header {
-  background: url('../images/heroimg.jpg') no-repeat center center;
+  background: url('heroimg.jpg') no-repeat center center;
   background-size: cover;
   height: 850px;
   color: #fff;
